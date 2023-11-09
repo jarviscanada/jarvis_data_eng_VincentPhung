@@ -4,25 +4,24 @@ db_name=$3
 psql_user=$4
 psql_password=$5
 
-if ["$#" -ne 5]; then
+if [ "$#" -ne 5 ]; then
   echo "Illegal number of parameters"
   exit 1
 fi
 
+lscpu_out=`lscpu`
 vmstat_mb=$(vmstat --unit M)
+
 hostname=$(hostname -f)
+cpu_number=$(echo "$lscpu_out"  | egrep "^CPU\(s\):" | awk '{print $2}' | xargs)
+cpu_architecture=$(echo "$lscpu_out" | egrep "^Architecture:" | awk '{print $2}' | xargs)
+cpu_model=$(echo "$lscpu_out" | egrep "^Model name:" | awk -F ": " '{print $2}' | xargs)
+cpu_mhz=$(echo "$lscpu_out" | egrep "^CPU MHz:" | awk '{print $3}' | xargs)
+l2_cache=$(echo "$lscpu_out" | egrep "^L2 cache:" | awk '{print $3}' | xargs | sed 's/[^0-9]//g')
+timestamp=$(vmstat -t | awk 'NR == 3 {print $18 " "  $19}' | xargs)
+total_mem=$(echo "$vmstat_mb" | tail -1 | awk '{total = $3 + $4 + $5 + $6; print total}')
 
-memory_free=$(echo "$vmstat_mb" | awk '{print $4}'| tail -n1 | xargs)
-cpu_idle=$(echo "$vmstat_mb" #todo
-cpu_kernel=$(echo "$vmstat_mb" #todo
-disk_io=$(vmstat -d | awk '{print $10}' #todo
-disk_available=$(df -BM / ...
-
-timestamp=$(vmstat -t | awk #todo
-
-host_id="(SELECT id FROM host_info WHERE hostname='$hostname')";
-
-insert_stmt="INSERT INTO host_usage(timestamp, ...) VALUES('$timestamp', #todo....
+insert_stmt="INSERT INTO host_info (hostname, cpu_number, cpu_architecture, cpu_model, cpu_mhz, l2_cache, \"timestamp\", total_mem) VALUES('$hostname','$cpu_number','$cpu_architecture','$cpu_model','$cpu_mhz','$l2_cache','$timestamp','$total_mem');"
 
 export PGPASSWORD=$psql_password
 
