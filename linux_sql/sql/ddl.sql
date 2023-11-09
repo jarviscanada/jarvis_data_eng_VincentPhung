@@ -58,3 +58,5 @@ SELECT * FROM host_info;
 
 -- Verify data in host_usage table
 SELECT * FROM host_usage;
+
+-- Test
