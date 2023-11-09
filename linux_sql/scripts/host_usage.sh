@@ -11,6 +11,7 @@ fi
 
 vmstat_mb=$(vmstat --unit M)
 hostname=$(hostname -f)
+export PGPASSWORD=$psql_password
 
 timestamp=$(vmstat -t | awk 'NR == 3 {print $18 " "  $19}' | xargs)
 host_id=$(psql -h $psql_host -p $psql_port -d $db_name -U $psql_user -t -c "SELECT id FROM host_info WHERE hostname='$hostname'")
@@ -21,8 +22,6 @@ disk_io=$(vmstat --unit M -d | tail -1 | awk '{print $10}' | xargs)
 disk_available=$(df -BM / | awk 'NR==2 {print $4}' | sed 's/M//')
 
 insert_stmt="INSERT INTO host_usage(\"timestamp\", host_id, memory_free,cpu_idle,cpu_kernel,disk_io,disk_available) VALUES('$timestamp','$host_id','$memory_free','$cpu_idle','$cpu_kernel','$disk_io','$disk_available');"
-
-export PGPASSWORD=$psql_password
 
 psql -h $psql_host -p $psql_port -d $db_name -U $psql_user -c "$insert_stmt"
 exit $?
