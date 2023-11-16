@@ -1,0 +1,141 @@
+{
+  "education": [
+    {
+      "awards_achievements": null,
+      "degree": "Bachelor of Engineering",
+      "department": "Computer Engineering",
+      "duration": "2018-2023",
+      "school_name": "Toronto Metropolitan University"
+    }
+  ],
+  "github_repo_root_url": "https://github.com/VincentP05",
+  "highlighted_projects": [
+    {
+      "description": "Developed the frontend for this application using ReactJS which includes a dynamic map. This application is a distributed system that communicates with multiple services to determine priority and optimal routes for emergency vehicles in the case of disaster on a user generated map. Technologies used include Javascript, ReactJS, Python, RabbitMQ, FastAPI, and Docker.",
+      "git_url": null,
+      "name": "Disaster Response System"
+    },
+    {
+      "description": "Created a full stack web application that allows users to log in and view a catalogue of different beverages and assign them ratings. The application was built with the MVC design pattern in mind, to separate the main components of the application. The application was built using Java, MySQl, Apache Tomcat, and Docker for deployment.",
+      "git_url": null,
+      "name": "Online Beverage Catalogue"
+    },
+    {
+      "description": "Developed the UI components for the application using ReactJS and Javascript. The application is real-time messaging web application using sockets and ML libraries, which allows for the application to pick certain phrases to create events in google calendar such as a doctor's appointment. The application was built using Javascript, ReactJS, Socket.io, Java, SpringBoot, and Firebase.",
+      "git_url": null,
+      "name": "Chatter"
+    },
+    {
+      "description": "Built a web application that allows the user to search up information of various Pokemon using NodeJS, Express.js, MongoDB, and EJS. I implemented Express to handle the routing for all the RESTful endpoints for all the pokemon. I also utilized the web speech API to have speech recognition and speech synthesis on the application.",
+      "git_url": "https://github.com/VincentP05/MyPoked3x",
+      "name": "Pokedex"
+    },
+    {
+      "description": "Created scripts that mimic a rover defusing mines in a 2D map. Built the server service API using FastAPI to handle various calls from various clients. Utilized RabbitMQ as the messaging broker to put the requests from clients into a queue. The client and server were both put into docker containers and hosted on Microsoft Azure.",
+      "git_url": null,
+      "name": "Mine Diffuser"
+    },
+    {
+      "description": "Implemented an object detection script for the autonomous ping pong collector rover and also created data sets to train the object detection model. The rover uses a jetson nano, arduino uno, and pre-existing object detection/avoidance models.",
+      "git_url": null,
+      "name": "Autonomous Ping Pong Collector"
+    }
+  ],
+  "jarvis_projects": [
+    {
+      "description": "A Linux cluster monitoring agent that allows the user to monitor nodes/machines and get their information if they are connected in a Linux cluster through the use of bash scripts. The information is persisted in a postgres database that's hosted on a docker container. The technologies used include Bash, Postgres, and Docker.",
+      "git_url": "/linux_sql",
+      "name": "Cluster Monitor"
+    },
+    {
+      "description": [
+        "Twitter App: Curabitur laoreet tristique leo, eget suscipit nisi. Sed in sodales ex. Maecenas vitae tincidunt dui, et eleifend quam.",
+        "JDBC App: Curabitur laoreet tristique leo, eget suscipit nisi. Sed in sodales ex. Maecenas vitae tincidunt dui, et eleifend quam.",
+        "Grep App: Curabitur laoreet tristique leo, eget suscipit nisi. Sed in sodales ex. Maecenas vitae tincidunt dui, et eleifend quam."
+      ],
+      "git_url": "/core_java",
+      "name": "Core Java Apps"
+    },
+    {
+      "description": "",
+      "git_url": "/springboot",
+      "name": "Springboot App"
+    },
+    {
+      "description": "",
+      "git_url": "/python_data_anlytics",
+      "name": "Python Data Analytics"
+    },
+    {
+      "description": "",
+      "git_url": "/hadoop",
+      "name": "Hadoop"
+    },
+    {
+      "description": "",
+      "git_url": "/spark",
+      "name": "Spark"
+    },
+    {
+      "description": "",
+      "git_url": "/cloud_devops",
+      "name": "Cloud/DevOps"
+    }
+  ],
+  "name": "Vincent Phung",
+  "others": [
+    {
+      "bullets": [
+        "Fishing",
+        "Calisthenics",
+        "Basketball",
+        "TFT and trading card games"
+      ],
+      "title": "Activities/Hobbies"
+    }
+  ],
+  "professional_experience": [
+    {
+      "company": "Jarvis",
+      "description": "Developed small scale real world applications using technologies including Bash, Git, Postgres, Docker, Java, Springboot, Python, Javascript, Typescript, Hadoop, and Spark. Applications include a linux cluster monitoring agent, stock quote application, RESTful API for trading platform, trading platform application ",
+      "duration": "2023-present",
+      "title": "Junior Software Developer"
+    },
+    {
+      "company": "Ontario Ministry of Health and Longterm Care",
+      "description": "Worked in the public health I\u0026IT solutions branch. Worked in the salesforce developer environment completing user stories for the critical case and contact management application, which was used to track and log cases of covid outbreaks and cases in Ontario. Used different technologies including apex, SOQL, and visual force (equivalent to Java, MySQL, and ReactJs). Introduced to agile development and version control in a large team setting using git. Coordinated with the QA team to identify bugs and defects to report to the development team. Learned about data remediation, and applied it to multiple SOQL databases, resulting in more accurate and higher quality data.",
+      "duration": "2021-2022",
+      "title": "Software Developer Intern"
+    }
+  ],
+  "skills": {
+    "competent": [
+      "ReactJS",
+      "Typescript",
+      "MongoDB/NoSQL",
+      "Node.js",
+      "Express.js",
+      "Tailwind",
+      "RDBMS/MySQL/Postgres/SQL",
+      "RESTful APIs",
+      "Docker"
+    ],
+    "familiar": [
+      "C",
+      "Oracle",
+      "MATLAB",
+      "RabbitMQ",
+      "Postman"
+    ],
+    "proficient": [
+      "Javascript",
+      "Python",
+      "Java",
+      "Linux/Bash",
+      "HTML5/CSS3",
+      "Agile/Scrum",
+      "Git"
+    ]
+  },
+  "summary": "Hello, I'm Vincent Phung, I'm currently a junior software engineer at Jarvis Consulting Group. I recently graduated with a Bachelor's degree in Computer Engineering, specializing in Software Engineering, from Toronto Metropolitan University in June 2023. I have previous experience working as a software developer intern with the Ontario Ministry of Health and Long-term Care. My main interests in the field of technology are fintech, blockchain technology, and game development. What excites me about this field is the opportunity to transform innovative ideas into tangible, impactful solutions. I find satisfaction in continuous learning, embracing new technologies, and translating them into real-world applications. In my spare time one of the things I enjoy doing is turning some of my ideas into fun projects that include full-stack web applications, scripts to automate tasks, and bots."
+}
