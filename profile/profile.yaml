@@ -47,12 +47,12 @@ jarvis_projects:
     # The project description allows hiring managers to understand your project and technologies you used(e.g. programming languages, libraries, algorithms, hardware, tools, etc.).
     # The project description must start with an action verb (https://bit.ly/3guO98u)
     description: Implemented a Linux cluster monitoring agent that allows users to monitor nodes/machines and get the host machine's hardware specification and current memory usage data through bash scripts.  A job scheduler, Crontab was also used to get the host's usage data in regular minute intervals.  The information is persisted in a Postgres database that's run on a Docker container.
-  #- name: "Core Java Apps"
-  #  git_url: "/core_java"
-  #  description:
+  - name: "Core Java Apps"
+    git_url: "/core_java"
+    description:
+        - "Grep App: Implemented a grep app in Java that allows the user to search through files in a specified directory for a specific string pattern declared by the user and have those matching lines outputted to a file. The project was built using Maven, and the whole application is dockerized."
   #    - "Twitter App: Curabitur laoreet tristique leo, eget suscipit nisi. Sed in sodales ex. Maecenas vitae tincidunt dui, et eleifend quam."
   #    - "JDBC App: Curabitur laoreet tristique leo, eget suscipit nisi. Sed in sodales ex. Maecenas vitae tincidunt dui, et eleifend quam."
-  #    - "Grep App: Curabitur laoreet tristique leo, eget suscipit nisi. Sed in sodales ex. Maecenas vitae tincidunt dui, et eleifend quam."
   #- name: "Springboot App"
   #  git_url: "/springboot"
   #  description: ""
