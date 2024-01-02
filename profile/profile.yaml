@@ -50,7 +50,7 @@ jarvis_projects:
   - name: "Core Java Apps"
     git_url: "/core_java"
     description:
-        - "Grep App: Implemented a grep app in Java that allows the user to search through files in a specified directory for a specific string pattern declared by the user and have those matching lines outputted to a file. The project was built using Maven, and the whole application is dockerized."
+        "- Grep App: Implemented a grep app in Java that allows the user to search through files in a specified directory for a specific string pattern declared by the user and have those matching lines outputted to a file. The project was built using Maven, and the whole application is dockerized."
   #    - "Twitter App: Curabitur laoreet tristique leo, eget suscipit nisi. Sed in sodales ex. Maecenas vitae tincidunt dui, et eleifend quam."
   #    - "JDBC App: Curabitur laoreet tristique leo, eget suscipit nisi. Sed in sodales ex. Maecenas vitae tincidunt dui, et eleifend quam."
   #- name: "Springboot App"

@@ -46,6 +46,11 @@
       "description": "Implemented a Linux cluster monitoring agent that allows users to monitor nodes/machines and get the host machine's hardware specification and current memory usage data through bash scripts.  A job scheduler, Crontab was also used to get the host's usage data in regular minute intervals.  The information is persisted in a Postgres database that's run on a Docker container.",
       "git_url": "/linux_sql",
       "name": "Linux Cluster Monitor"
+    },
+    {
+      "description": "- Grep App: Implemented a grep app in Java that allows the user to search through files in a specified directory for a specific string pattern declared by the user and have those matching lines outputted to a file. The project was built using Maven, and the whole application is dockerized.",
+      "git_url": "/core_java",
+      "name": "Core Java Apps"
     }
   ],
   "name": "Vincent Phung",
