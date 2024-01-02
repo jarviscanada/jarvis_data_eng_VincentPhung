@@ -1,0 +1,5 @@
+To automate the host_usage.ssh script
+Run:
+crontab -e
+Then insert the following below in it:
+* * * * * bash /home/centos/dev/jarvis_data_eng_vincentphung/linux_sql/scripts/host_usage.sh localhost 5432 host_agent postgres postgres > /tmp/host_usage.log
