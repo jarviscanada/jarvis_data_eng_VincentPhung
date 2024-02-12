@@ -1,0 +1,7 @@
+db-class:org.postgresql.Driver
+server:localhost
+database:host_agent
+port:5432
+username:postgres
+password:password
+api-key:#YOUR ALPHA VANTAGE KEY#
