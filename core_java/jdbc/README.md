@@ -11,7 +11,7 @@ The Maven framework was used for building the application, managing the dependen
 it consists of 3 layers not including the database layer, which includes the DAO layer, service layer, and controller layer.
 
 ## ER Diagram
-![ER Diagram](images/ERDiagram.png)
+![ER Diagram](ERDiagram.png)
 
 ## Design Patterns
 The Stock quote app, uses the DAO (Data Access Object), repository design pattern, and the MVC (Model-View-Controller) design patterns.
