@@ -8,7 +8,7 @@
       "school_name": "Toronto Metropolitan University"
     }
   ],
-  "github_repo_root_url": "https://github.com/VincentP05",
+  "github_repo_root_url": "https://github.com/jarviscanada/jarvis_data_eng_VincentPhung",
   "highlighted_projects": [
     {
       "description": "Developed the frontend for this application using ReactJS which includes a dynamic map. This application is a distributed system that communicates with multiple services using RabbitMQ to determine priority and optimal routes for emergency vehicles in the case of disaster on a user-generated map. The server's endpoints were created with FastAPI and Python. Both the server and client applications were run on Docker containers and hosted on Microsoft Azure.",
@@ -48,9 +48,19 @@
       "name": "Linux Cluster Monitor"
     },
     {
-      "description": "- Grep App: Implemented a grep app in Java that allows the user to search through files in a specified directory for a specific string pattern declared by the user and have those matching lines outputted to a file. The project was built using Maven, and the whole application is dockerized.",
-      "git_url": "/core_java",
-      "name": "Core Java Apps"
+      "description": "Implemented and executed various SQL queries on PostgresSQL tables. Utilized DBeaver as an interface for query execution. Utilized SQL Queries to perform CRUD operations, joins, aggregation functions, and other techniques.",
+      "git_url": "/linux_sql/sql",
+      "name": "SQL Queries"
+    },
+    {
+      "description": "Implemented a grep app in Java that allows the user to search through files in a specified directory for a specific string pattern declared by the user and have those matching lines outputted to a file. The project was built using Maven, and the whole application is dockerized.",
+      "git_url": "/core_java/grep",
+      "name": "Java Grep App"
+    },
+    {
+      "description": "Developed a application that simulates real-time stock buying and selling in Java 11. The application utilizes the Alpha Vantage API to get real-time stock market data in JSON, utilizing the OkHttp library for managing HTTP requests. Then the application processes the data using the Jackson library to convert the JSON object into a Java object. This object is then processed and saved in the Postgres database. The entire application runs in a Docker container. Design patterns utilized in this application include the DAO pattern, the Repository pattern, and the MVC (Model-View-Controller) pattern. Junit and Mockito were utilized to perform unit and integration testing to ensure the application is reliable and accurate.",
+      "git_url": "/core_java/jdbc",
+      "name": "Java Stock Quote App"
     }
   ],
   "name": "Vincent Phung",

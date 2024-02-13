@@ -12,12 +12,16 @@ I'm currently a junior software engineer at Jarvis Consulting Group. I recently 
 
 ## Jarvis Projects
 
-Project source code: [https://github.com/VincentP05](https://github.com/VincentP05)
+Project source code: [https://github.com/jarviscanada/jarvis_data_eng_VincentPhung](https://github.com/jarviscanada/jarvis_data_eng_VincentPhung)
 
 
-**Linux Cluster Monitor** [[GitHub](https://github.com/VincentP05/tree/master/linux_sql)]: Implemented a Linux cluster monitoring agent that allows users to monitor nodes/machines and get the host machine's hardware specification and current memory usage data through bash scripts.  A job scheduler, Crontab was also used to get the host's usage data in regular minute intervals.  The information is persisted in a Postgres database that's run on a Docker container.
+**Linux Cluster Monitor** [[GitHub](https://github.com/jarviscanada/jarvis_data_eng_VincentPhung/tree/master/linux_sql)]: Implemented a Linux cluster monitoring agent that allows users to monitor nodes/machines and get the host machine's hardware specification and current memory usage data through bash scripts.  A job scheduler, Crontab was also used to get the host's usage data in regular minute intervals.  The information is persisted in a Postgres database that's run on a Docker container.
 
-**Core Java Apps** [[GitHub](https://github.com/VincentP05/tree/master/core_java)]: - Grep App: Implemented a grep app in Java that allows the user to search through files in a specified directory for a specific string pattern declared by the user and have those matching lines outputted to a file. The project was built using Maven, and the whole application is dockerized.
+**SQL Queries** [[GitHub](https://github.com/jarviscanada/jarvis_data_eng_VincentPhung/tree/master/linux_sql/sql)]: Implemented and executed various SQL queries on PostgresSQL tables. Utilized DBeaver as an interface for query execution. Utilized SQL Queries to perform CRUD operations, joins, aggregation functions, and other techniques.
+
+**Java Grep App** [[GitHub](https://github.com/jarviscanada/jarvis_data_eng_VincentPhung/tree/master/core_java/grep)]: Implemented a grep app in Java that allows the user to search through files in a specified directory for a specific string pattern declared by the user and have those matching lines outputted to a file. The project was built using Maven, and the whole application is dockerized.
+
+**Java Stock Quote App** [[GitHub](https://github.com/jarviscanada/jarvis_data_eng_VincentPhung/tree/master/core_java/jdbc)]: Developed a application that simulates real-time stock buying and selling in Java 11. The application utilizes the Alpha Vantage API to get real-time stock market data in JSON, utilizing the OkHttp library for managing HTTP requests. Then the application processes the data using the Jackson library to convert the JSON object into a Java object. This object is then processed and saved in the Postgres database. The entire application runs in a Docker container. Design patterns utilized in this application include the DAO pattern, the Repository pattern, and the MVC (Model-View-Controller) pattern. Junit and Mockito were utilized to perform unit and integration testing to ensure the application is reliable and accurate.
 
 
 ## Highlighted Projects
