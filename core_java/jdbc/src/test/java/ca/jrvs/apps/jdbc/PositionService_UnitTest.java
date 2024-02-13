@@ -11,6 +11,7 @@ import java.sql.Connection;
 import static org.junit.Assert.*;
 
 public class PositionService_UnitTest {
+
     private PositionService positionService;
     private PositionDao dao;
     private Connection c;

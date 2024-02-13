@@ -15,6 +15,7 @@ import static org.junit.Assert.assertEquals;
 import static org.mockito.Mockito.*;
 
 public class PositionService_IntTest {
+
     @Mock
     private PositionDao mockDao;
     private PositionService positionService;
@@ -53,6 +54,8 @@ public class PositionService_IntTest {
         verify(mockDao).findById(ticker);
         verify(mockDao).deleteById(ticker);
     }
+
+
 }
 
  
